@@ -1,0 +1,30 @@
+@use "../../abstracts/" as *;
+
+.footer{
+    background-color: #1e1e1e;
+}
+
+.footer__flex{
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 85em) {
+        margin: 0 1rem;
+    }
+}
+
+.contact__link{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+
+    &:hover{
+        opacity: 0.5;
+        transition: all 0.2s;
+    }
+}
+
+.footer__icon{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
