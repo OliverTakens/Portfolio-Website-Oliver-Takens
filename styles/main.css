@@ -588,6 +588,18 @@ body {
   display: flex;
 }
 
+.icon__box {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 62em) {
+  .icon__box {
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .contact__flex {
   display: flex;
   justify-content: space-around;

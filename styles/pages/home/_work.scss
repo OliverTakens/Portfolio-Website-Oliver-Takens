@@ -1,6 +1,6 @@
 @use "../../abstracts/" as *;
 
-.work{
+.work {
     padding: 5rem 0;
     // overflow-x: hidden;
 
@@ -9,7 +9,7 @@
     }
 }
 
-.work__heading{
+.work__heading {
     font-size: 2.5rem;
     margin-bottom: 3rem;
 
@@ -18,11 +18,11 @@
     }
 }
 
-.borders{
+.borders {
     border: 0.5px solid rgb(80, 80, 80);
 }
 
-.work__flex{
+.work__flex {
     display: flex;
     justify-content: space-between;
     padding: 3rem 0;
@@ -38,23 +38,23 @@
     }
 }
 
-.work__box{
+.work__box {
     width: 100%;
     // overflow-x: hidden;
 }
 
-.work__flex-hover:hover{
+.work__flex-hover:hover {
     background-color: $back-light;
     transition: background-color .1s;
 }
 
-.work__box-heading{
+.work__box-heading {
     color: rgb(160, 160, 160);
     font-size: 2.5rem;
     line-height: 3rem;
 }
 
-.work__box-text{
+.work__box-text {
     font-size: 2.5rem;
     max-width: 30rem;
     line-height: 3rem;
@@ -65,7 +65,7 @@
     }
 }
 
-.work__icon{
+.work__icon {
     font-size: 2rem;
     background-color: white;
     padding: 0.1rem 0.2rem;
@@ -73,11 +73,11 @@
     border-radius: 1rem;
 }
 
-.work__tech{
+.work__tech {
     font-size: 1.3rem;
 }
 
-.work__button{
+.work__button {
     display: inline-block;
     width: fit-content;
     margin-top: 5rem;
@@ -90,7 +90,7 @@
     padding: 0.5rem 2rem 0.5rem 1rem;
     border-radius: 1rem;
 
-    &:hover{
+    &:hover {
         box-shadow: 0 0 10px rgba(255, 212, 36, 0.3);
         transition: box-shadow 0.1s;
     }
@@ -100,7 +100,7 @@
     }
 }
 
-.button__icon{
+.button__icon {
     position: absolute;
     top: 0.5rem;
     right: 0.3rem;
@@ -108,7 +108,7 @@
     display: inline-block;
 }
 
-.slider{
+.slider {
     position: relative;
     height: 100%;
     width: 42.5rem;
@@ -149,18 +149,29 @@
     }
 }
 
-.arrow__left{
+.arrow__left {
     left: 1rem;
 }
 
-.arrow__right{
+.arrow__right {
     right: 1rem;
 }
 
-.work__flex-hover:hover .arrow__left{
+.work__flex-hover:hover .arrow__left {
     display: flex;
 }
 
-.work__flex-hover:hover .arrow__right{
+.work__flex-hover:hover .arrow__right {
     display: flex;
+}
+
+.icon__box {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 62em) {
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
 }
